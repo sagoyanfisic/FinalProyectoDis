@@ -1,0 +1,24 @@
+</head>
+<body>
+  <header>
+	{% block encabezado %}{% endblock %}
+	<nav>
+	  <ul id='menu'>
+		  <li><a href='/'>Inicio</a></li>
+		  <li><a href='/usuarios'>Usuarios registrados</a></li>
+		  <li><a href='/recetas'>Recetas</a></li>
+      <li><a href="/comenta">Comenta</a></li>
+		  <li><a href='/sobre'>Sobre</a></li>
+      <li><a href="/contacto">Contactanos</a></li>
+    </ul>
+	</nav>
+	<hr>
+  </header>	
+  <section class='contenido'>
+	{% block contenido %}{% endblock %}
+  </section>
+  <footer>
+	<p></p>
+  </footer>
+</body>
+</html>
