@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wiki
+Version: 0.0.23
+Summary: A wiki system written for the Django framework.
+Home-page: http://www.django-wiki.org
+Author: Benjamin Bach
+Author-email: benjamin@overtag.dk
+License: GPLv3
+Description: UNKNOWN
+Keywords: django wiki markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
