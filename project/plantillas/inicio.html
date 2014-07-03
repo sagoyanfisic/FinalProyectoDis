@@ -1,22 +1,75 @@
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}css/estilo.css">
+	<title>.:Sistema de Gstión de Estadios:.</title>   
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- PARA TU LOGO-->
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!--Necesario-->
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="css/ion.css" />
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <!--Necesario--> 
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+	</noscript>
 </head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href='/'>Inicio</a></li>
+<body>  
+	<div class="navbar navbar-inverse navbar-fixed-top bgpt" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a class="navbar-brand logo"  >Sistema de Gstión de Estadios</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">    
+				<li><a href='/'  >Inicio</a></li>
 				<li><a href='/usuarios'>Usuarios Registrados</a></li>
 				<li><a href='/recetas'>Recetas</a></li>
 				<li><a href='/bebidas'>Bebidas</a></li>
-				<li><a href='/sobre'>Sobre</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<h1></h1>
+				<li><a href='/sobre'>Sobre</a></li> 
+				<li><a href='formulario.html'>Formulario</a></li> 
+	            <li><p></p></li>             
+          	</ul>
+        </div><!--/.nav-collapse --> 
+      </div>
+    </div> 
+	<section> 
+		<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Será cierto que.</h2>
+					<p>sB. programa en HTML</p> 
+					<div class="da-img"><img src="http://blog.movilforum.com/files/2012/12/HTML5_Wallpaper_1680x1050.png" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Realmente, MAD666</h2>
+					<p> es un GAY</p> 
+					<div class="da-img"><img src="http://static2.todanoticia.com/tn2/uploads/news_image/2013/03/18/ANONYMOUS.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Será</h2>
+					<p>Drop-Root , hombre</p> 
+					<div class="da-img"><img src="http://blogs.voanews.com/digital-frontiers/files/2011/06/AntiSec.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Realmente, el tio san es</h2>
+					<p> Erraín</p> 
+					<div class="da-img"><img src="http://descargarfondos.com/i/Sam-Bigotes-en-su-clasica-pose.jpg" alt="image01" /></div>
+				</div> 
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
 		<p>Actualmente tenemos registrados:</p>
 		<ul>
 			{% for dato in recetas %}
@@ -24,5 +77,24 @@
 			{% endfor %}
 		</ul>
 	</section>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			$('#da-slider').cslider({
+				autoplay	: true,
+				bgincrement	: 1000
+			});
+		
+		});
+    	$( ".navbar-toggle" ).click(function() {
+            $( ".collapse" ).toggle("slow"); 
+        });
+		$( ".dropdown" ).click(function() {
+            $( ".dropdown-menu" ).toggle("slow"); 
+        });
+	</script>	
 </body>
 </html>

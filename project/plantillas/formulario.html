@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>.:Sistema de Gstión de Estadios:.</title>   
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- PARA TU LOGO-->
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!--Necesario-->
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="css/ion.css" />
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <!--Necesario--> 
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+	</noscript>
+</head>
+<body>  
+	<div class="navbar navbar-inverse navbar-fixed-top bgpt" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a class="navbar-brand logo"  >Sistema de Gstión de Estadios</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">    
+				<li><a href='/'  >Inicio</a></li>
+				<li><a href='/usuarios'>Usuarios Registrados</a></li>
+				<li><a href='/recetas'>Recetas</a></li>
+				<li><a href='/bebidas'>Bebidas</a></li>
+				<li><a href='/sobre'>Sobre</a></li> 
+				<li><a href='formulario.html'>Formulario</a></li> 
+	            <li><p></p></li>             
+          	</ul>
+        </div><!--/.nav-collapse --> 
+      </div>
+    </div>  
+
+    <div id="formulario">
+    	<form method="post">
+    	<center>
+    		<br><br>
+    		<h2>Formulario</h2>
+    		<br> 
+    	</center>
+    	<div class="izq">
+    		<p>Nombre:</p>
+    	</div>
+    	<div class="der">
+    		<input autofocus maxlength="30">
+    	</div>
+    	<div class="izq">
+    		<p>Apellido:</p>
+    	</div>
+    	<div class="der">
+    		<input autofocus maxlength="30">
+    	</div>
+    	<div class="izq">
+    		<p>E-mail:</p>
+    	</div>
+    	<div class="der">
+    		<input autofocus maxlength="20">
+    	</div>
+    	<div class="izq">
+    		<p>Teléfono</p>
+    	</div>
+    	<div class="der">
+    		<input autofocus maxlength="9">
+    	</div>
+    	<div class="izq"> 
+    	</div>
+    	<div class="der">
+    		<button>Enviar</button>
+    		<button type="reset">Limpiar</button>
+    	</div>
+    	<br><br><br><br>
+    	</form>
+    </div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			$('#da-slider').cslider({
+				autoplay	: true,
+				bgincrement	: 1000
+			});
+		
+		});
+    	$( ".navbar-toggle" ).click(function() {
+            $( ".collapse" ).toggle("slow"); 
+        });
+		$( ".dropdown" ).click(function() {
+            $( ".dropdown-menu" ).toggle("slow"); 
+        });
+	</script>	
+</body>
+</html>
