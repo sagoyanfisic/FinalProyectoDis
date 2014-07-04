@@ -1,3 +1,4 @@
+
 from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 from django.conf import settings
@@ -6,7 +7,7 @@ from django.contrib.auth.views import login, logout, password_change
 
 
 admin.autodiscover()
-
+#if settings.DEBUG and settings.STATIC_ROOT:
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'project.views.home', name='home'),

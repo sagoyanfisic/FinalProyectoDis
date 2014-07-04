@@ -1,0 +1,38 @@
+.navbar-inverse{
+	background: white;
+	border: none;
+	color: black;
+	padding-bottom: 1em;
+	padding-top: 1em;	
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand{
+	color: rgb(151, 151, 151);
+	text-shadow: 0 -1px 0  rgb(151, 151, 151);
+}
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-brand:hover{
+	color: rgb(151, 151, 151);
+} 
+.navbar-inverse .navbar-brand{
+	font-size: 2em;
+}
+/*CARROUSEL*/
+.da-slide h2,
+.da-slide-toleft h2{
+	color: rgb(243, 243, 243);
+	text-shadow: 0 1px 1px black;
+}
+.da-slide p{
+	color: rgb(177, 177, 177);
+}
+
+.da-slide .da-img img{
+	width: 100%;
+} 
+.navbar-inverse .navbar-toggle{
+	background: rgba(54, 54, 54, 0.34);
+	border: none;
+	transition :all 1s;
+}

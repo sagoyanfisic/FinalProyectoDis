@@ -52,6 +52,7 @@ STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 STATICFILES_DIRS = (
+    os.path.join(RUTA_PROYECTO,'static'),
 
 )
 
@@ -105,6 +106,7 @@ INSTALLED_APPS = (
     'kombu.transport.django',
     'axes',
     #'south',
+    'django_extensions',
 )
 
 import djcelery

@@ -1,0 +1,54 @@
+div#formulario{
+	background: white;  
+	margin: 0 auto; 
+	margin-top: 8em;
+	text-align: center; 
+	width: 80%;
+}
+div#formulario h2{
+	color: rgb(177, 177, 177);
+	font-size: 2em;
+	text-shadow: 0 0 .1em rgb(111, 111, 111);
+}
+div#formulario div{ 
+	display: inline-block;
+	padding-top: 1em;
+}
+
+div#formulario div.izq{ 
+	text-align: left;
+	width: 30%;
+}
+div#formulario div.der{ 
+	text-align: left;
+	width: 50%;
+}
+div#formulario div.der input{
+	font-family: sans-serif;
+	padding-bottom: .2em;
+	padding-left: .4em;
+	padding-top: .2em;
+	outline: none;
+	width: 100%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+}
+div#formulario div.der input:focus{
+	padding-left: 1em;
+}
+div#formulario div.der  button{
+	background: rgba(0, 0, 0, 0.11);
+	border: none;
+	color: rgb(179, 164, 164);
+	padding: .4em 1em;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+}
+div#formulario div.der  button:hover{
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
