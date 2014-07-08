@@ -2,7 +2,7 @@ from django.forms import ModelForm
 from django import forms
 from principal.models import Entrada, Comentario
 
-'''
+
 class Conctactenos(forms,Form):
 	correo = forms.EmailField(label="Para Conctactarnos ingresa tu email aqui ")
     mensaje = forms.CharField(widget=forms.Textarea)
@@ -18,5 +18,3 @@ class ComentarioForm(ModelForm):
 class EntradaForm(ModelForm):
 	class Meta:
 		model = Entrada
-
-'''

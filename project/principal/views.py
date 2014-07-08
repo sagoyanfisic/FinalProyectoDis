@@ -32,3 +32,16 @@ def contacto(request):
 		formulario = ConctactoForm(request.POST)
 		if formulario.is_valid():
 			titulo = ''
+def contacto(request):
+    if request.method=='POST':
+        formulario = ContactoForm(request.POST)
+        if formulario.is_valid():
+            titulo = 'Mensaje desde el recetario de Maestros del Web'
+            contenido = formulario.cleaned_data['mensaje'] + "\n"
+            contenido += 'Comunicarse a: ' + formulario.cleaned_data['correo']
+            correo = EmailMessage(titulo, contenido, to=['destinatario@email.com'])
+            correo.send()
+            return HttpResponseRedirect('/')
+    else:
+        formulario = ContactoForm()
+    return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
