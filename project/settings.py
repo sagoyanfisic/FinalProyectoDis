@@ -1,6 +1,7 @@
 # Django settings for project project.
 #encoding:utf-8
 
+import dj_database_url
 import os
 
 
