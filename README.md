@@ -139,12 +139,5 @@ Deploy de aplicaciòn de Heroku
 
 	<code>$ heroku open</code>
 	
-<h6>Profesor:</h6><h5>Muñuz, Nehil</h5>
-     
-<h3> Alumnos : <h3>
-<ul>
-    <li><h5>Vila ,Eduardo</h5></li>
-    <li><h5>Crisanto Rosas , Rodolfo</h5></li>
-    <li><h5> Yancel Moises Salinas Gomez </h5></li>
-</ul>	
+
 	
